@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Nagar Foundation</title>
+    <link rel="icon" type="image/png" href="./src/public/images/cropped-CCT-New-Logo-1.png">
+    <!-- Link to compiled Tailwind CSS -->
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+     <header class="bg-white shadow-md fixed top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <!-- Logo -->
+            <a href="./index.html" class="flex items-center">
+                <img src="./src/public/images/cropped-CCT-New-Logo-1.png" alt="Pawan Nagar Foundation"
+                    class="h-12 w-12 object-contain">
+                <span class="ml-3 text-xl font-bold text-gray-800">Pawan Nagar Foundation</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="./index.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">
+                    Home
+                </a>
+
+                <a href="./About-us.html"
+                    class="text-gray-700  text-[18px] font-semibold hover:text-red-600 transition">About
+                    Us
+                </a>
+
+                <a href="./services.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">
+                    Services
+                </a>
+
+                
+                <!-- <a href="./Our-Work.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">Our
+                    Work</a> -->
+                <a href="./projects.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">Projects</a>
+                <a href="./Get-Involved.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">Get Involved</a>
+                <a href="./contact.html"
+                    class="text-gray-700 text-[18px] font-semibold  hover:text-red-600 transition">Contact</a>
+            </nav>
+
+            <!-- Donate Button -->
+            <a href="./DONATE.html"
+                class="hidden md:inline-block bg-red-600 text-white px-6 font-bold py-2  hover:bg-red-700 transition">
+                DONATE
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="h-8 w-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="md:hidden hidden flex flex-col space-y-4 bg-white pt-20 shadow-md p-4">
+        <a href="/" class="text-gray-700 hover:text-red-600 transition">Home</a>
+        <a href="./About-us.html" class="text-gray-700 hover:text-red-600 transition">About Us</a>
+        <a href="./services.html" class="text-gray-700 hover:text-red-600 transition">Services</a>
+        <a href="./projects.html" class="text-gray-700 hover:text-red-600 transition">Projects</a>
+        <a href="/get-involved" class="text-gray-700 hover:text-red-600 transition">Get Involved</a>
+        <a href="./contact.html" class="text-gray-700 hover:text-red-600 transition">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative w-full flex h-96 items-center justify-center bg-red-200 overflow-hidden">
+        <img src="./src/public/images/banner.jpg" alt="Healthcare"
+            class="absolute w-full h-full object-cover opacity-50">
+        <div class="relative text-center">
+            <h1 class="text-5xl font-bold text-gray-800 mb-4">Get Involved</h1>
+            <p class="text-lg text-gray-700">Join us in making a difference!.</p>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Content Column -->
+            <div class="space-y-8">
+                <h2 class="text-3xl font-bold text-red-600">Why Get Involved?</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    At Pawan Nagar Foundation, we believe that real change happens when people come together. Whether
+                    you're
+                    passionate about education, healthcare, or community development, there's a place for you in our
+                    mission. Your
+                    involvement can help us reach more lives and create a lasting impact.
+                </p>
+
+                <h3 class="text-2xl font-bold text-red-600">Ways to Get Involved</h3>
+                <div class="space-y-6">
+                    <!-- Volunteering -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h4 class="text-xl font-semibold text-gray-800">Volunteer</h4>
+                        <p class="text-gray-600 mt-2">
+                            Join our team of dedicated volunteers and contribute your time and skills to our programs.
+                            Whether it's
+                            teaching, organizing events, or providing medical assistance, your help is invaluable.
+                        </p>
+                    </div>
+
+                    <!-- Donations -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h4 class="text-xl font-semibold text-gray-800">Donate</h4>
+                        <p class="text-gray-600 mt-2">
+                            Your financial contributions help us fund critical projects, from building schools to
+                            providing medical
+                            supplies. Every donation, big or small, makes a difference.
+                        </p>
+                    </div>
+
+                    <!-- Partnerships -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h4 class="text-xl font-semibold text-gray-800">Partner With Us</h4>
+                        <p class="text-gray-600 mt-2">
+                            Collaborate with us as a corporate partner or NGO. Together, we can amplify our impact and
+                            reach more
+                            communities in need.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image and Form Column -->
+            <div class="space-y-8">
+                <!-- Image -->
+                <img src="https://images.unsplash.com/photo-1613399421095-41f5c68e9f8c?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Community volunteers working together"
+                    class="rounded-lg shadow-lg w-full h-auto">
+
+                <!-- Joining Form -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-bold text-red-600 mb-6">Join Us Today</h3>
+                    <form class="space-y-6">
+                        <!-- Name -->
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500">
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500">
+                        </div>
+
+                        <!-- Interest -->
+                        <div>
+                            <label for="interest" class="block text-sm font-medium text-gray-700">How would you like to
+                                help?</label>
+                            <select id="interest" name="interest"
+                                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500">
+                                <option value="volunteer">Volunteer</option>
+                                <option value="donate">Donate</option>
+                                <option value="partner">Partner With Us</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit"
+                            class="w-full bg-red-700 text-white px-6 py-3  hover:bg-red-800 transition-colors duration-300">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section  -->
+
+    <footer id="footer" role="contentinfo" class="bg-gray-900 text-white py-12">
+        <div id="footer-inner" class="container mx-auto px-4">
+            <div id="footer-widgets" class="mb-12">
+                <div class="footer-widgets-inner grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Contact Section -->
+                    <div class="footer-box space-y-4">
+                        <h4 class="text-lg font-bold border-b border-gray-700 pb-2">Pawan Nagar Foundation</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="X">
+                                    <i class="fab fa-twitter mr-2"></i>Twitter</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f mr-2"></i>Facebook</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="Instagram">
+                                    <i class="fab fa-instagram mr-2"></i>Instagram</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="Youtube">
+                                    <i class="fab fa-youtube mr-2"></i>YouTube</a></li>
+                        </ul>
+
+                        <div class="text-sm text-gray-400 space-y-2">
+                            <p><strong class="text-white">Address:</strong>Lorem ipsum dolor sit.</p>
+                            <p><strong class="text-white">Phone:</strong> +91-098765432</p>
+                            <p><strong class="text-white">Email:</strong> admin@test.com</p>
+                            <p><strong class="text-white">All donations to Pawan Nagar Foundation are
+                                    tax-deductible.</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-box space-y-4">
+                        <h4 class="text-lg font-bold border-b border-gray-700 pb-2">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Donate</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Education</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Healthcare</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Development</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Volunteer</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Outreach</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="footer-box space-y-4">
+                        <h4 class="text-lg font-bold border-b border-gray-700 pb-2">Newsletter Sign-Up</h4>
+                        <form method="post" action="/" class="space-y-4">
+                            <div>
+                                <label for="name" class="block mb-1 text-sm">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Name" required
+                                    class="w-full bg-gray-800 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-1 text-sm">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Email Address" required
+                                    class="w-full bg-gray-800 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded transition-colors">SIGN-UP</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div id="footer-bottom" class="border-t border-gray-800 pt-8">
+                <ul class="flex flex-wrap justify-center gap-4 mb-4">
+                   <li><a href="/index.html" class="text-sm text-gray-400 hover:text-red-700 transition-colors">Home</a></li>
+                    <li><a href="/contact.html" class="text-sm text-gray-400 hover:text-red-700 transition-colors">Contact
+                            Us</a></li>
+                </ul>
+                <div class="text-center text-gray-400 space-y-2 text-sm">
+                    <p>Copyright 2000-2021 | Pawan Nagar Foundation | All Rights Reserved</p>
+                    <p>Designed By <a href="#" target="_blank" class="hover:text-red-700 transition-colors">Panfila
+                            Global Solutions</a></p>
+                    <p>Hosted By <a href="#" class="hover:text-red-700 transition-colors">Lorem ipsum dolor sit.</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

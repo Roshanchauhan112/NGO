@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Nagar Foundation</title>
+    <link rel="icon" type="image/png" href="./src/public/images/cropped-CCT-New-Logo-1.png">
+    <!-- Link to compiled Tailwind CSS -->
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-md fixed top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <!-- Logo -->
+            <a href="./index.html" class="flex items-center">
+                <img src="./src/public/images/cropped-CCT-New-Logo-1.png" alt="Pawan Nagar Foundation"
+                    class="h-12 w-12 object-contain">
+                <span class="ml-3 text-xl font-bold text-gray-800">Pawan Nagar Foundation</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="./index.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">
+                    Home
+                </a>
+
+                <a href="./About-us.html"
+                    class="text-gray-700  text-[18px] font-semibold hover:text-red-600 transition">About
+                    Us
+                </a>
+
+                <a href="./services.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">
+                    Services
+                </a>
+
+                
+                <!-- <a href="./Our-Work.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">Our
+                    Work</a> -->
+                <a href="./projects.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">Projects</a>
+                <a href="./Get-Involved.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">Get Involved</a>
+                <a href="./contact.html"
+                    class="text-gray-700 text-[18px] font-semibold  hover:text-red-600 transition">Contact</a>
+            </nav>
+
+            <!-- Donate Button -->
+            <a href="./DONATE.html"
+                class="hidden md:inline-block bg-red-600 text-white px-6 font-bold py-2  hover:bg-red-700 transition">
+                DONATE
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="h-8 w-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="md:hidden hidden flex flex-col space-y-4 bg-white pt-20 shadow-md p-4">
+        <a href="/" class="text-gray-700 hover:text-red-600 transition">Home</a>
+        <a href="./About-us.html" class="text-gray-700 hover:text-red-600 transition">About Us</a>
+        <a href="./services.html" class="text-gray-700 hover:text-red-600 transition">Services</a>
+        <a href="./projects.html" class="text-gray-700 hover:text-red-600 transition">Projects</a>
+        <a href="/get-involved" class="text-gray-700 hover:text-red-600 transition">Get Involved</a>
+        <a href="./contact.html" class="text-gray-700 hover:text-red-600 transition">Contact</a>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative w-full flex h-96 items-center justify-center bg-red-200 overflow-hidden">
+        <img src="./src/public/images/banner.jpg" alt="Healthcare"
+            class="absolute w-full h-full object-cover opacity-50">
+        <div class="relative text-center">
+            <h1 class="text-5xl font-bold text-gray-800 mb-4">About-us</h1>
+            <!-- <p class="text-lg text-gray-700">Your support can change lives.</p> -->
+        </div>
+    </section>
+
+
+    <!-- About Us Section -->
+    <section class="h-auto md:h-[500px] w-full flex flex-col md:flex-row justify-between p-4 md:p-10 mb-10"  id="about">
+        <!-- Video Section -->
+        <div class="w-full md:w-1/2 h-full p-4">
+            <video src="./src/public/images/NGO Showreel _ BURNING TWIG _.mp4" autoplay muted loop
+                class="w-full aspect-video rounded-lg shadow-lg" title="Pawan Nagar Foundation Showreel">
+            </video>
+            <p class="text-center text-gray-800 font-bold mt-5 text-lg">
+                Pawan Nagar Foundation | Message From Founder
+            </p>
+            <!-- <a href="./About-us.html"
+                class="block md:inline-block bg-red-600 text-white px-8 font-bold py-2 ml-56 hover:bg-red-700 mt-4 transition text-center">
+                Know More
+            </a> -->
+        </div>
+
+        <!-- About Content Section -->
+        <div class="w-full md:w-1/2 px-4 md:px-6 mt-8 md:mt-0">
+            <h2 class="text-3xl font-bold text-red-700 mb-4">About Us</h2>
+            <p class="text-gray-600 text-base leading-9 mb-8">Pawan Nagar Foundation (CCT) is a registered
+                non-governmental organization with
+                tax-exempt status under Section 80G of the Indian Income Tax Act. CCT has been working with the
+                marginalized and the underprivileged at Kakkanur, Odiyathur and surrounding villages of Villupuram
+                District, Tamil Nadu since 2000. CCT has initiated programs in the field of health care, education,
+                social and economical development to improve the living conditions of the rural communities. CCT has
+                special focus in supporting the empowerment of the dalits and widows toward their emancipation through
+                awareness and training programs.</p>
+            <div class="flex flex-wrap justify-start items-center gap-4 md:gap-16">
+                <div class="flex justify-center gap-1 items-center flex-col">
+                    <img src="src/public/images/education.png" alt="CCT Work" class="h-7 object-cover rounded-lg">
+                    <p class="text-red-700">Education</p>
+                </div>
+                <div class="flex justify-center gap-1 items-center flex-col">
+                    <img src="src/public/images/health.png" alt="CCT Work" class="h-7 object-cover rounded-lg">
+                    <p class="text-red-700">HEALTHCARE</p>
+                </div>
+                <div class="flex justify-center gap-1 items-center flex-col">
+                    <img src="src/public/images/DEVELOPMENT.svg" alt="CCT Work" class="h-7 object-cover rounded-lg">
+                    <p class="text-red-700">DEVELOPMENT</p>
+                </div>
+                <!-- <div class="flex justify-center gap-1 items-center flex-col">
+                    <img src="src/public/images/transformation.png" alt="CCT Work" class="h-7 object-cover rounded-lg">
+                    <p class="text-red-700">TRANSFORMATION</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-white p-8 rounded-lg shadow-lg mb-12 flex flex-col md:flex-row gap-8">
+        <!-- Mission Section -->
+        <div class="flex-1">
+            <h2 class="text-2xl font-semibold text-center text-red-500">Our Mission</h2>
+            <p class="mt-4">Pawan Nagar Foundation is committed to empowering underprivileged communities through
+                education,
+                healthcare, and sustainable development. We believe that every individual deserves equal opportunities
+                to
+                thrive, and we work tirelessly to make that vision a reality.</p>
+            <img src="https://i.pinimg.com/736x/89/9b/a5/899ba5bb245bd1d69b2cc65d565f7b8f.jpg" alt="Community Support"
+                class="mt-6 h-64 w-full object-cover shadow-lg">
+        </div>
+
+        <!-- Vision Section -->
+        <div class="flex-1">
+            <h2 class="text-2xl font-semibold text-center text-red-500">Our Vision</h2>
+            <p class="mt-4">We envision a world where every person has access to basic needs, quality education, and the
+                opportunity to lead a fulfilling life. Through collaboration and resource mobilization, we aim to foster
+                a
+                compassionate and just society.</p>
+            <img src="https://i.pinimg.com/736x/44/c8/99/44c899828ea3c39c110a346400868c15.jpg" alt="Our Vision"
+                class="mt-6 h-64 w-full object-cover shadow-lg">
+        </div>
+    </section>
+
+    <section class="bg-white  rounded-lg flex w-full h-96 shadow-lg mb-12">
+        <div class="p-8">
+            <h2 class="text-2xl font-semibold text-red-500">What We Do</h2>
+            <ul class="list-disc pl-5 mt-4">
+                <li class="mb-2">Education programs and scholarships for children and adults.</li>
+                <li class="mb-2">Healthcare initiatives including medical camps and awareness drives.</li>
+                <li class="mb-2">Community development through infrastructure and employment generation.</li>
+                <li class="mb-2">Environmental conservation and eco-friendly practice promotion.</li>
+            </ul>
+        </div>
+        <img src="https://i.pinimg.com/736x/99/60/68/9960681df11d36bac0f356d887751f52.jpg" alt="Our Work"
+            class="h-full w-full object-cover shadow-lg">
+    </section>
+
+    <section class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold text-red-500">Join Us</h2>
+        <p class="mt-4">Your support can drive real change. Whether you want to volunteer, donate, or collaborate, your
+            efforts can help us reach more people and make a larger impact. Together, let’s make the world a better
+            place.</p>
+        <p class="mt-4">For more information, reach out to us at <a href="mailto:info@communitycaretrust.org"
+                class="text-red-500 underline">info@admin.org</a> or visit our website at <a href="index.html"
+                class="text-red-500 underline">admin.org</a>.</p>
+    </section>
+
+
+
+
+
+
+
+    <!-- footer section  -->
+
+    <footer id="footer" role="contentinfo" class="bg-gray-900 text-white py-12">
+        <div id="footer-inner" class="container mx-auto px-4">
+            <div id="footer-widgets" class="mb-12">
+                <div class="footer-widgets-inner grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Contact Section -->
+                    <div class="footer-box space-y-4">
+                        <h4 class="text-lg font-bold border-b border-gray-700 pb-2">Pawan Nagar Foundation</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="X">
+                                    <i class="fab fa-twitter mr-2"></i>Twitter</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f mr-2"></i>Facebook</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="Instagram">
+                                    <i class="fab fa-instagram mr-2"></i>Instagram</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="Youtube">
+                                    <i class="fab fa-youtube mr-2"></i>YouTube</a></li>
+                        </ul>
+
+                        <div class="text-sm text-gray-400 space-y-2">
+                            <p><strong class="text-white">Address:</strong>Lorem ipsum dolor sit.</p>
+                            <p><strong class="text-white">Phone:</strong> +91-098765432</p>
+                            <p><strong class="text-white">Email:</strong> admin@test.com</p>
+                            <p><strong class="text-white">All donations to Pawan Nagar Foundation are
+                                    tax-deductible.</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-box space-y-4">
+                        <h4 class="text-lg font-bold border-b border-gray-700 pb-2">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="./DONATE.html" class="hover:text-red-700 transition-colors">Donate</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Education</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Healthcare</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Development</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Volunteer</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Outreach</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="footer-box space-y-4">
+                        <h4 class="text-lg font-bold border-b border-gray-700 pb-2">Newsletter Sign-Up</h4>
+                        <form method="post" action="/" class="space-y-4">
+                            <div>
+                                <label for="name" class="block mb-1 text-sm">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Name" required
+                                    class="w-full bg-gray-800 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-1 text-sm">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Email Address" required
+                                    class="w-full bg-gray-800 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded transition-colors">SIGN-UP</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div id="footer-bottom" class="border-t border-gray-800 pt-8">
+                <ul class="flex flex-wrap justify-center gap-4 mb-4">
+                    <li><a href="index.html" class="text-sm text-gray-400 hover:text-red-700 transition-colors">Home</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="text-sm text-gray-400 hover:text-red-700 transition-colors">Contact
+                            Us</a></li>
+                </ul>
+                <div class="text-center text-gray-400 space-y-2 text-sm">
+                    <p>Copyright 2000-2021 | Pawan Nagar Foundation | All Rights Reserved</p>
+                    <p>Designed By <a href="#" target="_blank" class="hover:text-red-700 transition-colors">Panfila
+                            Global Solutions</a></p>
+                    <p>Hosted By <a href="#" class="hover:text-red-700 transition-colors">Lorem ipsum dolor sit.</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Nagar Foundation</title>
+    <link rel="icon" type="image/png" href="./src/public/images/cropped-CCT-New-Logo-1.png">
+    <!-- Link to compiled Tailwind CSS -->
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+     <header class="bg-white shadow-md fixed top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <!-- Logo -->
+            <a href="./index.html" class="flex items-center">
+                <img src="./src/public/images/cropped-CCT-New-Logo-1.png" alt="Pawan Nagar Foundation"
+                    class="h-12 w-12 object-contain">
+                <span class="ml-3 text-xl font-bold text-gray-800">Pawan Nagar Foundation</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="./index.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">
+                    Home
+                </a>
+
+                <a href="./About-us.html"
+                    class="text-gray-700  text-[18px] font-semibold hover:text-red-600 transition">About
+                    Us
+                </a>
+
+                <a href="./services.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">
+                    Services
+                </a>
+
+                
+                <!-- <a href="./Our-Work.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">Our
+                    Work</a> -->
+                <a href="./projects.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">Projects</a>
+                <a href="./Get-Involved.html"
+                    class="text-gray-700 text-[18px] font-semibold hover:text-red-600 transition">Get Involved</a>
+                <a href="./contact.html"
+                    class="text-gray-700 text-[18px] font-semibold  hover:text-red-600 transition">Contact</a>
+            </nav>
+
+            <!-- Donate Button -->
+            <a href="./DONATE.html"
+                class="hidden md:inline-block bg-red-600 text-white px-6 font-bold py-2  hover:bg-red-700 transition">
+                DONATE
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="h-8 w-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="md:hidden hidden flex flex-col space-y-4 bg-white pt-20 shadow-md p-4">
+        <a href="/" class="text-gray-700 hover:text-red-600 transition">Home</a>
+        <a href="./About-us.html" class="text-gray-700 hover:text-red-600 transition">About Us</a>
+        <a href="./services.html" class="text-gray-700 hover:text-red-600 transition">Services</a>
+        <a href="./projects.html" class="text-gray-700 hover:text-red-600 transition">Projects</a>
+        <a href="/get-involved" class="text-gray-700 hover:text-red-600 transition">Get Involved</a>
+        <a href="./contact.html" class="text-gray-700 hover:text-red-600 transition">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative w-full flex h-96 items-center justify-center bg-blue-200 overflow-hidden">
+        <img src="./src/public/images/banner.jpg" alt="Healthcare"
+            class="absolute w-full h-full object-cover opacity-50">
+        <div class="relative text-center">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">Healthcare Projects</h1>
+            <p class="text-base sm:text-lg text-gray-700">Providing essential medical services to underserved
+                communities.</p>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="w-full h-auto flex items-center justify-center flex-col gap-9 p-5 mt-16">
+        <p class="text-2xl sm:text-3xl md:text-4xl font-bold text-center">CHECK ACTIVE PROJECTS AND HELP US</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-full max-w-6xl p-2">
+            <!-- Project Card -->
+            <div class="bg-gray-300 rounded-md flex flex-col items-center p-4 shadow-lg">
+                <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?q=80&w=1470&auto=format&fit=crop"
+                    alt="" class="w-24 h-24 rounded-full object-cover">
+                <p class="pb-4 font-semibold text-center">Healthcare Projects</p>
+                <p class="text-center text-sm"><b>Medical Camps:</b> Free health check-ups, vaccination drives, and
+                    blood donation camps.</p>
+                <a href="" class="px-6 py-2 bg-red-700 mt-3 text-white rounded-md text-sm">Know More</a>
+            </div>
+
+            <div class="bg-gray-300 rounded-md flex flex-col items-center p-4 shadow-lg">
+                <img src="https://plus.unsplash.com/premium_photo-1671069848132-92977175e560?q=80&w=1373&auto=format&fit=crop"
+                    alt="" class="w-24 h-24 rounded-full object-cover">
+                <p class="pb-4 font-semibold text-center">Educational Projects</p>
+                <p class="text-center text-sm"><b>Scholarships:</b> Financial aid for underprivileged children.</p>
+                <a href="" class="px-6 py-2 bg-red-700 mt-3 text-white rounded-md text-sm">Know More</a>
+            </div>
+
+            <div class="bg-gray-300 rounded-md flex flex-col items-center p-4 shadow-lg">
+                <img src="https://images.unsplash.com/photo-1636986905406-758b0e280f49?q=80&w=1374&auto=format&fit=crop"
+                    alt="" class="w-24 h-24 rounded-full object-cover">
+                <p class="pb-4 font-semibold text-center">Women Empowerment</p>
+                <p class="text-center text-sm"><b>Legal Aid:</b> Educating women on their rights and providing legal
+                    support.</p>
+                <a href="" class="px-6 py-2 bg-red-700 mt-3 text-white rounded-md text-sm">Know More</a>
+            </div>
+
+            <div class="bg-gray-300 rounded-md flex flex-col items-center p-4 shadow-lg">
+                <img src="https://images.unsplash.com/photo-1633158834806-766387547d2c?q=80&w=1470&auto=format&fit=crop"
+                    alt="" class="w-24 h-24 rounded-full object-cover">
+                <p class="pb-4 font-semibold text-center">Skill Development</p>
+                <p class="text-center text-sm"><b>Agricultural Support:</b> Educating farmers on sustainable practices
+                    and new technologies.</p>
+                <a href="" class="px-6 py-2 bg-red-700 mt-3 text-white rounded-md text-sm">Know More</a>
+            </div>
+
+            <div class="bg-gray-300 rounded-md flex flex-col items-center p-4 shadow-lg">
+                <img src="https://plus.unsplash.com/premium_photo-1711987229773-3832fca590cd?q=80&w=1374&auto=format&fit=crop"
+                    alt="" class="w-24 h-24 rounded-full object-cover">
+                <p class="pb-4 font-semibold text-center">Environmental Projects</p>
+                <p class="text-center text-sm"><b>Waste Management:</b> Recycling and proper waste disposal campaigns.
+                </p>
+                <a href="" class="px-6 py-2 bg-red-700 mt-3 text-white rounded-md text-sm">Know More</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Healthcare Project Section -->
+    <section class="container mx-auto py-20 px-6 overflow-hidden" style="height: auto;">
+        <div class="flex flex-col md:flex-row items-center" style="height: 100%;">
+            <div class="w-full md:w-1/2 mb-6 md:mb-0" style="height: auto;">
+                <img src="https://i.pinimg.com/736x/92/2a/25/922a25e19f9575bafe1c76bb094392fb.jpg" alt="" class="w-full h-64 md:h-80 object-cover rounded-lg">
+            </div>
+            <div class="w-full md:w-1/2 px-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Healthcare Mission</h2>
+                <p class="text-gray-600 mb-8">Pawan Nagar Foundation (CCT) has been providing healthcare services to rural and underserved communities since 2000. Our mission is to ensure access to quality medical care, promote health education, and improve overall community well-being.</p>
+    
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li><strong>Medical Camps:</strong> Free health check-ups, vaccination drives, and blood donation camps.</li>
+                    <li><strong>Awareness Campaigns:</strong> Spreading information about diseases like HIV, tuberculosis, or mental health.</li>
+                    <li><strong>Maternal and Child Health:</strong> Programs focused on maternal care, nutrition, and child development.</li>
+                    <li><strong>Mobile Clinics:</strong> Providing healthcare access in remote or rural areas.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modawive Healthcare Mission Section -->
+    <section class="container mx-auto py-20 px-6 bg-white">
+        <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Healthcare Mission</h2>
+        <p class="text-lg text-gray-700 mb-6">At Modawive, we believe that health and well-being are the cornerstones of
+            a thriving community. Our Healthcare Mission is driven by a commitment to providing accessible, high-quality
+            healthcare solutions that empower individuals to lead healthier, happier lives.</p>
+        <ul class="list-disc list-inside text-gray-700 mb-8">
+            <li>Promote awareness about preventive healthcare and well-being.</li>
+            <li>Offer support and resources for physical and mental health.</li>
+            <li>Collaborate with healthcare professionals to ensure accurate and reliable information.</li>
+            <li>Innovate through technology to make healthcare services more accessible and efficient.</li>
+        </ul>
+        <p class="text-lg text-gray-700 mb-6">Our approach is centered around:</p>
+        <ul class="list-disc list-inside text-gray-700">
+            <li><strong>Education and Awareness:</strong> We conduct health campaigns and workshops to educate the
+                community about healthy lifestyle choices and preventive care.</li>
+            <li><strong>Partnerships:</strong> By working closely with hospitals, clinics, and wellness centers, we
+                ensure our community has access to top-notch medical expertise and care.</li>
+            <li><strong>Digital Health Solutions:</strong> We leverage advanced technology to provide telehealth
+                services, online consultations, and health monitoring tools, making healthcare more accessible than
+                ever.</li>
+            <li><strong>Community Support:</strong> We foster a supportive environment where individuals can seek
+                guidance, share experiences, and find encouragement on their health journeys.</li>
+        </ul>
+        <p class="text-lg text-gray-700 mt-6">At Modawive, we envision a world where everyone has the knowledge and
+            resources to maintain their well-being, and we are dedicated to making this vision a reality.</p>
+    </section>
+
+    <!-- footer section  -->
+
+    <footer id="footer" role="contentinfo" class="bg-gray-900 text-white py-12">
+        <div id="footer-inner" class="container mx-auto px-4">
+            <div id="footer-widgets" class="mb-12">
+                <div class="footer-widgets-inner grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Contact Section -->
+                    <div class="footer-box space-y-4">
+                        <h4 class="text-lg font-bold border-b border-gray-700 pb-2">Pawan Nagar Foundation</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="X">
+                                    <i class="fab fa-twitter mr-2"></i>Twitter</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f mr-2"></i>Facebook</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="Instagram">
+                                    <i class="fab fa-instagram mr-2"></i>Instagram</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors" aria-label="Youtube">
+                                    <i class="fab fa-youtube mr-2"></i>YouTube</a></li>
+                        </ul>
+
+                        <div class="text-sm text-gray-400 space-y-2">
+                            <p><strong class="text-white">Address:</strong>Lorem ipsum dolor sit.</p>
+                            <p><strong class="text-white">Phone:</strong> +91-098765432</p>
+                            <p><strong class="text-white">Email:</strong> admin@test.com</p>
+                            <p><strong class="text-white">All donations to Pawan Nagar Foundation are
+                                    tax-deductible.</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-box space-y-4">
+                        <h4 class="text-lg font-bold border-b border-gray-700 pb-2">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Donate</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Education</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Healthcare</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Development</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Volunteer</a></li>
+                            <li><a href="#" class="hover:text-red-700 transition-colors">Outreach</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="footer-box space-y-4">
+                        <h4 class="text-lg font-bold border-b border-gray-700 pb-2">Newsletter Sign-Up</h4>
+                        <form method="post" action="/" class="space-y-4">
+                            <div>
+                                <label for="name" class="block mb-1 text-sm">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Name" required
+                                    class="w-full bg-gray-800 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-1 text-sm">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Email Address" required
+                                    class="w-full bg-gray-800 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition-colors">SIGN-UP</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div id="footer-bottom" class="border-t border-gray-800 pt-8">
+                <ul class="flex flex-wrap justify-center gap-4 mb-4">
+                    <li><a href="/index.html"
+                            class="text-sm text-gray-400 hover:text-red-700 transition-colors">Home</a></li>
+                    <li><a href="/contact.html"
+                            class="text-sm text-gray-400 hover:text-red-700 transition-colors">Contact
+                            Us</a></li>
+                </ul>
+                <div class="text-center text-gray-400 space-y-2 text-sm">
+                    <p>Copyright 2000-2021 | Pawan Nagar Foundation | All Rights Reserved</p>
+                    <p>Designed By <a href="#" target="_blank" class="hover:text-red-700 transition-colors">Panfila
+                            Global Solutions</a></p>
+                    <p>Hosted By <a href="#" class="hover:text-red-700 transition-colors">Lorem ipsum dolor sit.</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./src/js/main.js"></script>
+
+    <script>
+        gsap.from("h1", { duration: 1.5, opacity: 0, scale: 0.8, ease: "bounce.out" });
+        gsap.from("p", { duration: 1.5, opacity: 0, delay: 0.5, scale: 0.8, ease: "elastic.out(1, 0.3)" });
+        gsap.from("img", { duration: 1, opacity: 0, scale: 0.8, delay: 1.5, ease: "back.out(1.7)" });
+    </script>
+</body>
+
+</html>
